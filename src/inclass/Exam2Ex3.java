@@ -11,14 +11,14 @@ public class Exam2Ex3 {
 		double distance = 1; // m
 		
 		// Process
-		double force = gravitationalForce(mass1, mass2, distance);
+		double force = computeGravitationalForce(mass1, mass2, distance);
 
 		// Output
 		System.out.printf("Given m1=%.3fkg, m2=%.3fkg, d=%.3fm, then F=%.3fN%n",
 				mass1, mass2, distance, force);
 	}
 
-	public static double gravitationalForce(double m1, double m2, double d) {
+	public static double computeGravitationalForce(double m1, double m2, double d) {
 		return (G * m1 * m2) / (d * d);
 	}
 

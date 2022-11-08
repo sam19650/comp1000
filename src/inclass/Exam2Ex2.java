@@ -26,7 +26,7 @@ public class Exam2Ex2 {
 		scanner.close();
 	}
 
-	private static long factorial(int n) {
+	public static long factorial(int n) {
 		if (n == 0)
 			return 1;
 

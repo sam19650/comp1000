@@ -10,14 +10,14 @@ public class Exam2Ex4 {
 		Scanner scanner = new Scanner(System.in);
 		
 		// Input
-		int[] values = new int[10];
-		System.out.print("Enter 10 integers: ");
-
+		int[] values;
 		
+		values = new int[10];
+		System.out.print("Enter 10 integers: ");
 		for (int i = 0; i < values.length; i++) {
 			values[i] = scanner.nextInt();
 		}
-
+		
 		// Output
 		System.out.println("The values in reverse order: ");
 		for (int i = values.length - 1; i >= 0; i--) {
