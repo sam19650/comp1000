@@ -2,7 +2,7 @@ package inclass;
 
 public class Exam2Ex3 {
 
-	static final double G = 6.673E-11;
+	static final double G = 6.673E-11; // 6.673 * Math.pow(10, -11)
 
 	public static void main(String[] args) {
 		// Input

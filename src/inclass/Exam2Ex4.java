@@ -12,6 +12,8 @@ public class Exam2Ex4 {
 		// Input
 		int[] values = new int[10];
 		System.out.print("Enter 10 integers: ");
+
+		
 		for (int i = 0; i < values.length; i++) {
 			values[i] = scanner.nextInt();
 		}
