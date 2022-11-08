@@ -9,9 +9,10 @@ public class Exam2Ex2 {
 		Scanner scanner = new Scanner(System.in);
 
 		// Input
+		System.out.print("Enter N: ");
 		int n = scanner.nextInt();
 		if (n < 0) {
-			System.out.println("Invalid input!");
+			System.out.println("No factorial for negative numbers!");
 			System.exit(0);
 		}
 		

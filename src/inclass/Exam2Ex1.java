@@ -15,7 +15,7 @@ public class Exam2Ex1 {
 		
 		do {
 			// Input
-			System.out.print("Enter a positive integer (zero or negative integer to stop): ");
+			System.out.print("Enter positive integers, stopping with zero or a negative number: ");
 			int number = scanner.nextInt();
 			
 			// Process
@@ -28,9 +28,8 @@ public class Exam2Ex1 {
 
 		} while (!done);
 
-		
 		// Output
-		System.out.println("Maximum is " + maxSoFar);
+		System.out.printf("The max is %d%n", maxSoFar);
 		
 		// Cleanup
 		scanner.close();
