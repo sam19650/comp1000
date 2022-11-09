@@ -50,10 +50,10 @@ public class LetterGradeRedux {
 			letterGrade = A_GRADE;
 		else if (score >= B_LOW && score <= B_HIGH)
 			letterGrade = B_GRADE;
-		else if (score >= D_LOW && score <= D_HIGH)
-			letterGrade = D_GRADE;
 		else if (score >= C_LOW && score <= C_HIGH)
 			letterGrade = C_GRADE;
+		else if (score >= D_LOW && score <= D_HIGH)
+			letterGrade = D_GRADE;
 		else
 			letterGrade = F_GRADE;
 
