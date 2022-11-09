@@ -21,7 +21,7 @@ public class PA6a {
 	static final int DECEMBER = 11;
 
 	static final String[] monthName = { "January", "February", "March", "April", "May", "June", "July", "August",
-			"September", "October", "November", "December", };
+			"September", "October", "November", "December" };
 
 	static final int DAYS_IN_JANUARY = 31;
 	static final int DAYS_IN_FEBRUARY = 28;

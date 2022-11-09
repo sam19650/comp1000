@@ -16,29 +16,29 @@ public class Exam2Ex0 {
 		double x2 = scanner.nextDouble();
 		
 		// Process
-		double min, max;
+		double minimum, maximum;
 		
 		if (x0 > x1) {
-			min = x1;
-			max = x0;
+			minimum = x1;
+			maximum = x0;
 		} else {
-			min = x0;
-			max = x1;
+			minimum = x0;
+			maximum = x1;
 		}
-		
-		if (x2 < min) {
+
+		if (x2 > maximum) {
+			x0 = minimum;
+			x1 = maximum;
+		} else if (x2 < minimum) {
 			x0 = x2;
-			x1 = min;
-			x2 = max;
-		} else if (x2 > max) {
-			x0 = min;
-			x1 = max;
+			x1 = minimum;
+			x2 = maximum;
 		} else {
-			x0 = min;
+			x0 = minimum;
 			x1 = x2;
-			x2 = max;
+			x2 = maximum;
 		}
-		
+
 		// Output
 		System.out.println("x0 = " + x0);
 		System.out.println("x1 = " + x1);
