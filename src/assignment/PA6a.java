@@ -20,8 +20,20 @@ public class PA6a {
 	static final int NOVEMBER = 10;
 	static final int DECEMBER = 11;
 
-	static final String[] monthName = { "January", "February", "March", "April", "May", "June", "July", "August",
-			"September", "October", "November", "December" };
+	static final String[] monthName = { 
+			"January",
+			"February",
+			"March",
+			"April",
+			"May",
+			"June",
+			"July",
+			"August",
+			"September",
+			"October",
+			"November",
+			"December"
+	};
 
 	static final int DAYS_IN_JANUARY = 31;
 	static final int DAYS_IN_FEBRUARY = 28;
@@ -36,10 +48,19 @@ public class PA6a {
 	static final int DAYS_IN_NOVEMBER = 30;
 	static final int DAYS_IN_DECEMBER = 31;
 
-	static final int[] daysInMonth = { DAYS_IN_JANUARY, DAYS_IN_FEBRUARY, DAYS_IN_MARCH, DAYS_IN_APRIL, DAYS_IN_MAY,
-			DAYS_IN_JUNE, DAYS_IN_JULY, DAYS_IN_AUGUST, DAYS_IN_SEPTEMBER, DAYS_IN_OCTOBER, DAYS_IN_NOVEMBER,
-			DAYS_IN_DECEMBER,
-
+	static final int[] daysInMonth = {
+			DAYS_IN_JANUARY,
+			DAYS_IN_FEBRUARY,
+			DAYS_IN_MARCH,
+			DAYS_IN_APRIL,
+			DAYS_IN_MAY,
+			DAYS_IN_JUNE,
+			DAYS_IN_JULY,
+			DAYS_IN_AUGUST,
+			DAYS_IN_SEPTEMBER,
+			DAYS_IN_OCTOBER,
+			DAYS_IN_NOVEMBER,
+			DAYS_IN_DECEMBER
 	};
 
 	// Control
@@ -64,7 +85,7 @@ public class PA6a {
 		}
 
 		if (isLeapYear(year))
-			daysInMonth[FEBRUARY] = 29;
+			daysInMonth[FEBRUARY]++;
 
 		// Output
 		for (int i = 0; i < MONTHS_PER_YEAR; i++) {
