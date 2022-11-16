@@ -36,7 +36,8 @@ public class PA6a {
 	};
 
 	static final int DAYS_IN_JANUARY = 31;
-	static final int DAYS_IN_FEBRUARY = 28;
+	static final int DAYS_IN_FEBRUARY_NORMAL = 28;
+	static final int DAYS_IN_FEBRUARY_LEAP = 29;
 	static final int DAYS_IN_MARCH = 31;
 	static final int DAYS_IN_APRIL = 30;
 	static final int DAYS_IN_MAY = 31;
@@ -50,7 +51,7 @@ public class PA6a {
 
 	static final int[] daysInMonth = {
 			DAYS_IN_JANUARY,
-			DAYS_IN_FEBRUARY,
+			0,
 			DAYS_IN_MARCH,
 			DAYS_IN_APRIL,
 			DAYS_IN_MAY,
@@ -85,8 +86,10 @@ public class PA6a {
 		}
 
 		if (isLeapYear(year))
-			daysInMonth[FEBRUARY]++;
-
+			daysInMonth[FEBRUARY] = DAYS_IN_FEBRUARY_LEAP;
+		else
+			daysInMonth[FEBRUARY] = DAYS_IN_FEBRUARY_NORMAL;
+			
 		// Output
 		for (int i = 0; i < MONTHS_PER_YEAR; i++) {
 			printMonth(monthName[i], daysInMonth[i], dayOfWeek);
