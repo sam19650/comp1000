@@ -1,0 +1,26 @@
+Problem a (PA7a.java)
+
+Write a program that reads a stream of integers from a file and stores them in
+an array. The array is then analyzed to compute the average of all the values
+in the array and finally all of the values that are above the average should be
+printed out to the screen. Specifically, you must write three methods: main(),
+readIntoArray(), and printAboveAverage().
+
+main() gets the path to the input file from the user and attempts to open the
+file, outputting an error if the file cannot be opened. readIntoArray() is then
+called to read values from the file and store them in the array. It must be
+passed two arguments: a scanner opened on the file, and the array. You should
+only store a maximum of 100 values from the input file, and so can size your
+array appropriately. Note, however, that there might be fewer than 100 values
+in the file. This method must return how many integers, up to 100, were read
+into the array.
+
+Finally, printAboveAverage() should be called to read through the array, compute
+the average, and then print out all values in the array that are above the
+average. In particular, for each value above the average it should print the
+index in the array, as well as the value itself. printAboveAverage() should take
+two arguments: the array and the actual number of values in the array. Note that
+this second argument is not the total number of elements that the array can hold,
+but is instead the number of values read from the file. For example, the array
+should be able to hold up to 100 values, but there might have only been 15 values
+in the file.
