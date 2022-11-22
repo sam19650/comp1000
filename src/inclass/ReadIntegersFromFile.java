@@ -37,4 +37,19 @@ public class ReadIntegersFromFile {
 
 	}
 
+	public static int readIntoArray(Scanner scanner, int[] values) {
+
+		int count = 0;
+		
+		while (scanner.hasNextInt()) {
+			int value = scanner.nextInt();
+			
+			values[count] = value;
+			
+			count++;
+		}
+
+		return count;
+	}
+
 }

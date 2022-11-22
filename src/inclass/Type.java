@@ -13,19 +13,16 @@ public class Type {
 			System.exit(0);
 		}
 
+		int[] letterFrequency = new int[26];
+		
 		File file = new File(args[0]);
 		
 		try {
 			Scanner scanner = new Scanner(file);
 
-			int linesToBePrinted = 10;
-			
-			while (scanner.hasNextLine() && linesToBePrinted > 0) {
+			while (scanner.hasNextLine()) {
 				String line = scanner.nextLine();
-				
 				System.out.println(line);
-				
-				linesToBePrinted--;
 			}
 			
 			scanner.close();
