@@ -13,8 +13,6 @@ public class Type {
 			System.exit(0);
 		}
 
-		int[] letterFrequency = new int[26];
-		
 		File file = new File(args[0]);
 		
 		try {
