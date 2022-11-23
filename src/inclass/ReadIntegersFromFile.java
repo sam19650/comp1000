@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class ReadIntegersFromFile {
 
-	public static final String FILE_NAME = "data.txt";
+	public static final String FILE_NAME = "PA7a.txt";
 	
 	public static void main(String[] args) {
 

@@ -8,7 +8,7 @@ public class PA7b {
 
 	public static final int ALPHABET_SIZE = 26;
 	
-	public static final String FILE_NAME = "data.txt";
+	public static final String FILE_NAME = "PA7b.txt";
 			
 	public static void main(String[] args) {
 
