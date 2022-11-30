@@ -2,15 +2,20 @@ package inclass;
 
 public class Point {
 
-	// Data, Attributes, Properties
+	// Attributes
 	
 	private double x;
 
 	private double y;
 	
 	
-	// Code, Methods, Operations, Behavior
+	// Methods
 	
+	public Point(double x) {
+		this.x = x;
+		this.y = 0;
+	}
+
 	public Point(double x, double y) {
 		this.x = x;
 		this.y = y;
@@ -30,4 +35,9 @@ public class Point {
 		return y;
 	}
 
+	@Override
+	public String toString() {
+		return String.format("Point [x = %.2f, y = %.2f]", x, y); 
+	}
+	
 }

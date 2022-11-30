@@ -2,6 +2,7 @@ package inclass;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ReadIntegersFromFile {
@@ -18,7 +19,7 @@ public class ReadIntegersFromFile {
 			int sum = 0;
 			int count = 0;
 			
-			while (scanner.hasNextInt()) {
+			while (scanner.hasNext()) {
 				int value = scanner.nextInt();
 				sum += value;
 				count++;
@@ -33,23 +34,11 @@ public class ReadIntegersFromFile {
 		} catch (FileNotFoundException exception) {
 			System.out.printf("%s not found!%n", FILE_NAME);
 			System.exit(0);
+		} catch (InputMismatchException exception) {
+			System.out.printf("%s is invalid!%n", FILE_NAME);
+			System.exit(0);
 		}
 
-	}
-
-	public static int readIntoArray(Scanner scanner, int[] values) {
-
-		int count = 0;
-		
-		while (scanner.hasNextInt()) {
-			int value = scanner.nextInt();
-			
-			values[count] = value;
-			
-			count++;
-		}
-
-		return count;
 	}
 
 }
