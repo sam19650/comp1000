@@ -1,4 +1,4 @@
-package inclass;
+package exam3;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -35,7 +35,7 @@ public class ReadIntegersFromFile {
 			System.out.printf("%s not found!%n", FILE_NAME);
 			System.exit(0);
 		} catch (InputMismatchException exception) {
-			System.out.printf("%s is invalid!%n", FILE_NAME);
+			System.out.printf("%s invalid!%n", FILE_NAME);
 			System.exit(0);
 		}
 

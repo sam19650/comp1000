@@ -1,4 +1,4 @@
-package inclass;
+package exam3;
 
 import java.io.File;
 import java.io.FileNotFoundException;
