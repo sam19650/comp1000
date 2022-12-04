@@ -37,7 +37,7 @@ public class Point {
 
 	@Override
 	public String toString() {
-		return String.format("My Class Point [x = %.2f, y = %.2f]", x, y); 
+		return String.format("Point [x = %.2f, y = %.2f]", x, y); 
 	}
 	
 	public static void main(String[] args) {

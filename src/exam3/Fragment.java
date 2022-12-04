@@ -24,13 +24,11 @@ public class Fragment {
 		double y = 3.0;
 		double z = 4.5;
 		z = average(x, y);
-		System.out.printf("%.3f%n", x);
-		System.out.printf("%.3f%n", z);
+		System.out.printf("%.2f%n", x);
+		System.out.printf("%.2f%n", z);
 	}
 
 	private static double average(double a, double b) {
-		a = a * 2;
-		b = b / 2;
 		return (a + b) / 2;
 	}
 
