@@ -4,7 +4,7 @@ public class AverageUtil {
 
 	public static double getAverage(int[] values) {
 
-		int sum = 0;
+		double sum = 0;
 		for (int i = 0; i < values.length; i++) {
 			sum += values[i];
 		}
