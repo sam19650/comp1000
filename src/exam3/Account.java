@@ -22,7 +22,7 @@ public class Account {
 	}
 
 	public static void main(String[] args) {
-		Account account; // Atef's account
+		Account account;
 		
 		account = new Account(100);
 		System.out.println(account);
@@ -32,6 +32,10 @@ public class Account {
 		
 		account.updateBalance(-35);
 		System.out.println(account);
+		
+		Account atefAccount = new Account(25);
+		System.out.println(atefAccount);
+		
 	}
 	
 }

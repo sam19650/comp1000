@@ -6,7 +6,7 @@ public class Fragment {
 
 		// Fragment 1
 					//  0   1  2  3   4  5  6  7
-		int[] array = { 5, -1, 0, 9, -2, 8, 7, 4 };
+		int[] array = { 5, -1, 0, 4, -2, 4, 5, 4 };
 		int sum = 0;
 		for (int i = 6; i >=0 ; i = i - 2) {
 		   sum = sum + array[i];
@@ -17,8 +17,7 @@ public class Fragment {
 		// Fragment 2
 		double value;
 		value = 24 / 20;
-		System.out.printf("%.2f", value);
-
+		System.out.printf("%.2f%n", value);
 
 		// Fragment 3
 		double x = 1.5;

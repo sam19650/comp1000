@@ -23,7 +23,8 @@ public class WriteIntegersToFile {
 			out.close();
 			
 		} catch (FileNotFoundException e) {
-			e.printStackTrace();
+			System.out.printf("%s not found!%n", FILE_NAME);
+			System.exit(0);
 		}
 
 		System.out.println("Done");
